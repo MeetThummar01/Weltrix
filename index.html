@@ -38,7 +38,7 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#apps" class="text-slate-300 hover:text-blue-400 transition">Apps</a>
                 <a href="#features" class="text-slate-300 hover:text-blue-400 transition">Features</a>
-                <a href="#" class="text-slate-300 hover:text-blue-400 transition">About</a>
+                <a href="#about" class="text-slate-300 hover:text-blue-400 transition">About</a>
             </div>
             <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">
                 Contact Us
@@ -67,18 +67,27 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- App Card 1: YouTube Downloader -->
-                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover">
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover flex flex-col">
                     <div class="flex items-center mb-4">
                         <!-- Icon Placeholder -->
-                        <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white">Video Downloader Pro</h3>
                     </div>
-                    <p class="text-slate-400 mb-6">
+                    <p class="text-slate-400 mb-6 flex-grow">
                         The ultimate tool for downloading videos, thumbnails, and custom clips from the web in the highest quality.
                     </p>
-                    <a href="https://weltrix.netlify.app" class="font-semibold text-blue-400 hover:text-blue-300 transition">Learn More &rarr;</a>
+                    <div class="mt-auto flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="flex-1 text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,3H11V12H2V3M13,3H22V7H13V3M13,9H22V12H13V9M2,14H11V21H2V14Z"></path></svg>
+                            Windows
+                        </a>
+                        <a href="#" class="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,1H7A2,2 0 0,0 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3A2,2 0 0,0 17,1M17,19H7V5H17V19M16,13H13V8H11V13H8L12,17L16,13Z"></path></svg>
+                            Android
+                        </a>
+                    </div>
                 </div>
 
                 <!-- App Card 2: Placeholder -->
@@ -135,6 +144,17 @@
                 </div>
             </div>
         </section>
+
+        <!-- NEW: About Section -->
+        <section id="about" class="container mx-auto px-6 py-16">
+            <div class="bg-slate-800 rounded-2xl p-8 md:p-12 border border-slate-700">
+                <h2 class="text-4xl font-bold text-center text-white mb-6">About Weltrix</h2>
+                <p class="text-center text-lg text-slate-300 max-w-4xl mx-auto">
+                    At Weltrix, we build intelligent software solutions designed to streamline, scale, and future-proof your digital ecosystem. Whether you're a startup or an enterprise, our mission is to deliver clean, efficient, and impactful technology tailored to your goals. Backed by innovation, driven by precision — Weltrix is where ideas evolve into smart systems.
+                </p>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
