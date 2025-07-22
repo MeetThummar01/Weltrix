@@ -3,218 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your App Name - High-Quality Video Downloader</title>
+    <title>Weltrix - Intelligent solutions for a digital world</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* slate-900 */
         }
-        .gradient-bg {
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        .gradient-text {
+            background: linear-gradient(90deg, #60A5FA, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .glass-effect {
-            background: rgba(40, 48, 56, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(67, 73, 82, 0.5);
+        .hero-bg {
+            background-color: #0F172A;
+            background-image: radial-gradient(#1E293B 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
         }
     </style>
 </head>
-<body class="bg-slate-900 text-white">
+<body class="text-slate-200">
 
-    <!-- Header Section -->
-    <header class="gradient-bg shadow-lg">
-        <div class="container mx-auto px-6 py-4">
-            <h1 class="text-3xl font-bold text-white">Your App Name</h1>
-            <p class="text-lg text-blue-200">The Ultimate Video Downloader for Web, Desktop & Mobile</p>
-        </div>
+    <!-- Header / Navigation -->
+    <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Weltrix
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#apps" class="text-slate-300 hover:text-blue-400 transition">Apps</a>
+                <a href="#features" class="text-slate-300 hover:text-blue-400 transition">Features</a>
+                <a href="#" class="text-slate-300 hover:text-blue-400 transition">About</a>
+            </div>
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+                Contact Us
+            </a>
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
+    <!-- Hero Section -->
+    <main class="hero-bg">
+        <section class="container mx-auto px-6 py-24 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+                Intelligent solutions for a <span class="gradient-text">digital world.</span>
+            </h1>
+            <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+                Welcome to Weltrix. We build powerful, secure, and user-friendly software to enhance your digital life and streamline your workflow.
+            </p>
+            <a href="#apps" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg">
+                Explore Our Apps
+            </a>
+        </section>
 
-        <!-- NEW: Online Downloader Tool -->
-        <section id="online-tool" class="mb-12">
-            <h2 class="text-3xl font-bold text-center mb-2 text-blue-400">Try It Online Now</h2>
-            <p class="text-center text-slate-400 mb-8">No installation needed. Just paste a YouTube link below.</p>
+        <!-- Apps Section -->
+        <section id="apps" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Our Software Suite</h2>
             
-            <div class="glass-effect rounded-2xl p-8 shadow-2xl">
-                <!-- Input and Fetch Button -->
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <input id="youtube-url" type="text" placeholder="Paste your YouTube URL here..." class="w-full p-4 bg-slate-900 border border-slate-700 rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                    <button id="fetch-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg flex-shrink-0">
-                        <span>Fetch Links</span>
-                    </button>
-                </div>
-
-                <!-- Results Area -->
-                <div id="results-area" class="mt-8">
-                    <!-- Download links will be injected here by JavaScript -->
-                </div>
-            </div>
-        </section>
-        
-        <!-- AdSense Placeholder 1 (e.g., a leaderboard ad) -->
-        <div class="bg-slate-800 rounded-lg p-8 my-8 text-center text-slate-400">
-            <p>Google AdSense Banner (728x90) Placeholder</p>
-        </div>
-
-        <!-- App Description and Download Section -->
-        <section id="desktop-apps">
-            <h2 class="text-3xl font-bold text-center mb-8 text-blue-400">Or, Get the Desktop & Mobile Apps</h2>
-            <div class="bg-slate-800 rounded-2xl shadow-2xl overflow-hidden md:flex">
-                <!-- Left Side - App Screenshot/Mockup -->
-                <div class="md:w-1/2 p-8 flex items-center justify-center">
-                    <img src="https://placehold.co/500x400/1e293b/ffffff?text=App+Screenshot" 
-                         alt="App Screenshot" 
-                         class="rounded-lg shadow-xl"
-                         onerror="this.onerror=null;this.src='https://placehold.co/500x400/1e293b/ffffff?text=Image+Error';">
-                </div>
-
-                <!-- Right Side - Features and Download Buttons -->
-                <div class="md:w-1/2 p-8 bg-slate-800/50">
-                    <h3 class="text-2xl font-bold mb-4">Powerful Features</h3>
-                    <ul class="space-y-3 mb-8 text-slate-300">
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>All Qualities Supported (Up to 8K)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Download Thumbnails & Custom Clips</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Clean, Modern Interface</span>
-                        </li>
-                    </ul>
-                    <div class="space-y-4">
-                        <a href="#" class="w-full flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 shadow-lg">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,3H11V12H2V3M13,3H22V7H13V3M13,9H22V12H13V9M2,14H11V21H2V14Z"></path></svg>
-                            Download for Windows (.exe)
-                        </a>
-                        <a href="#" class="w-full flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 shadow-lg">
-                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,1H7A2,2 0 0,0 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3A2,2 0 0,0 17,1M17,19H7V5H17V19M16,13H13V8H11V13H8L12,17L16,13Z"></path></svg>
-                            Download for Android (.apk)
-                        </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- App Card 1: YouTube Downloader -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover">
+                    <div class="flex items-center mb-4">
+                        <!-- Icon Placeholder -->
+                        <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Video Downloader Pro</h3>
                     </div>
+                    <p class="text-slate-400 mb-6">
+                        The ultimate tool for downloading videos, thumbnails, and custom clips from the web in the highest quality.
+                    </p>
+                    <a href="https://weltrix.netlify.app" class="font-semibold text-blue-400 hover:text-blue-300 transition">Learn More &rarr;</a>
+                </div>
+
+                <!-- App Card 2: Placeholder -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover">
+                    <div class="flex items-center mb-4">
+                        <!-- Icon Placeholder -->
+                        <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5V4H4zm0 0l5 5m-5-5h5m-5 5v5h5v-5H4zM15 4h5v5h-5V4zm0 0l5 5m-5-5h5m-5 5v5h5v-5h-5zM4 15h5v5H4v-5zm0 0l5 5m-5-5h5m5-5h5v5h-5v-5zm0 0l5 5m-5-5h5"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">File Converter X</h3>
+                    </div>
+                    <p class="text-slate-400 mb-6">
+                        Convert documents, images, and audio files between hundreds of formats with a single click.
+                    </p>
+                    <a href="#" class="font-semibold text-blue-400 hover:text-blue-300 transition">Coming Soon &rarr;</a>
+                </div>
+
+                <!-- App Card 3: Placeholder -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover">
+                    <div class="flex items-center mb-4">
+                        <!-- Icon Placeholder -->
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Secure Notes</h3>
+                    </div>
+                    <p class="text-slate-400 mb-6">
+                        Keep your thoughts and sensitive information safe with end-to-end encrypted notes.
+                    </p>
+                    <a href="#" class="font-semibold text-blue-400 hover:text-blue-300 transition">Coming Soon &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto px-6 py-16">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-white">Why Choose Weltrix?</h2>
+                <p class="mt-4 text-lg text-slate-400">We focus on what matters most for a great user experience.</p>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-slate-800/50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Powerful & Fast</h3>
+                    <p class="text-slate-400">Our apps are optimized for performance, getting the job done quickly without slowing down your system.</p>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Clean & Intuitive</h3>
+                    <p class="text-slate-400">We believe great software shouldn't be complicated. Our designs are clean, modern, and easy to use.</p>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Secure & Private</h3>
+                    <p class="text-slate-400">Your privacy is paramount. Our software is built with security in mind, with no ads or trackers.</p>
                 </div>
             </div>
         </section>
-        
-        <div class="bg-slate-800 rounded-lg p-8 my-8 text-center text-slate-400">
-            <p>Google AdSense Box (300x250) Placeholder</p>
-        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-800/50 mt-12">
-        <div class="container mx-auto px-6 py-4 text-center text-slate-400">
-            <p>&copy; 2025 Your App Name. All Rights Reserved.</p>
-            <p class="text-sm mt-1">Disclaimer: Please respect copyright laws. This tool is for personal use only.</p>
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+            <p>&copy; 2025 Weltrix. All Rights Reserved.</p>
+            <p class="text-sm mt-1">Intelligent solutions for a digital world.</p>
         </div>
     </footer>
-
-    <!-- JavaScript for the Online Tool -->
-    <script>
-        const fetchBtn = document.getElementById('fetch-btn');
-        const urlInput = document.getElementById('youtube-url');
-        const resultsArea = document.getElementById('results-area');
-
-        fetchBtn.addEventListener('click', async () => {
-            const youtubeUrl = urlInput.value.trim();
-            if (!youtubeUrl) {
-                resultsArea.innerHTML = `<p class="text-red-400 text-center">Please enter a YouTube URL.</p>`;
-                return;
-            }
-
-            // Show loading state
-            fetchBtn.disabled = true;
-            fetchBtn.innerHTML = `
-                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <span>Fetching...</span>`;
-            resultsArea.innerHTML = '';
-
-            try {
-                // 1. Extract Video ID from URL
-                const videoId = extractVideoID(youtubeUrl);
-                if (!videoId) {
-                    throw new Error('Could not find a valid YouTube video ID in the URL.');
-                }
-
-                // 2. Use a reliable Invidious API instance
-                const apiUrl = `https://yewtu.be/api/v1/videos/${videoId}`;
-
-                const response = await fetch(apiUrl);
-
-                if (!response.ok) {
-                    throw new Error(`API Error: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-
-                // 3. Process the response and display results
-                displayResults(data);
-
-            } catch (error) {
-                resultsArea.innerHTML = `<p class="text-red-400 text-center">Failed to fetch download links. ${error.message}</p>`;
-            } finally {
-                // Restore button state
-                fetchBtn.disabled = false;
-                fetchBtn.innerHTML = `<span>Fetch Links</span>`;
-            }
-        });
-
-        function extractVideoID(url) {
-            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
-            const match = url.match(regex);
-            return match ? match[1] : null;
-        }
-
-        function displayResults(data) {
-            const streams = data.formatStreams || [];
-            const audioStreams = data.adaptiveFormats ? data.adaptiveFormats.filter(f => f.type.startsWith('audio')) : [];
-
-            if (streams.length === 0 && audioStreams.length === 0) {
-                resultsArea.innerHTML = `<p class="text-yellow-400 text-center">No downloadable formats found.</p>`;
-                return;
-            }
-
-            let html = `<h3 class="text-xl font-semibold mb-4 text-center">${data.title}</h3>`;
-            html += '<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">';
-            
-            // Display video streams
-            streams.forEach(item => {
-                // You can wrap these 'a' tags with your link shortener URL
-                html += `
-                    <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300 flex flex-col items-center justify-center">
-                        <span class="text-lg">${item.qualityLabel}</span>
-                        <span class="text-xs text-slate-400">${item.container.toUpperCase()}</span>
-                    </a>
-                `;
-            });
-            
-            // Display best audio stream
-            if (audioStreams.length > 0) {
-                const bestAudio = audioStreams.reduce((prev, current) => (prev.bitrate > current.bitrate) ? prev : current);
-                 html += `
-                    <a href="${bestAudio.url}" target="_blank" rel="noopener noreferrer" class="bg-purple-700 hover:bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300 flex flex-col items-center justify-center">
-                        <span class="text-lg">Audio Only</span>
-                        <span class="text-xs text-slate-400">MP3 / M4A</span>
-                    </a>
-                `;
-            }
-
-
-            html += '</div>';
-            resultsArea.innerHTML = html;
-        }
-
-    </script>
 
 </body>
 </html>
