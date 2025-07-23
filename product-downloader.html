@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader Pro by Weltrix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* slate-950 */
+            color: #e2e8f0; /* slate-200 */
+        }
+        .container {
+            max-width: 1100px;
+        }
+        .hero-bg {
+            background-color: #020617;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60A5FA, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white">
+                &larr; Back to Weltrix Home
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-slate-300 hover:text-blue-400 transition">Features</a>
+                <a href="#download" class="text-slate-300 hover:text-blue-400 transition">Download</a>
+                <a href="#support" class="text-slate-300 hover:text-blue-400 transition">Support</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero-bg border-b border-slate-800">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight">
+                    The Ultimate <span class="gradient-text">Video Downloader</span>
+                </h1>
+                <p class="mt-6 text-lg text-slate-400 max-w-xl mx-auto">
+                    Download videos, audio, and clips from the web in the highest quality. Simple, fast, and free.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#download" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                        Download Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshot/Demo Section -->
+        <section id="demo" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="bg-slate-800 border border-slate-700 rounded-2xl p-4 shadow-2xl">
+                    <img src="https://placehold.co/1200x675/0f172a/3b82f6?text=App+Screenshot+Here" alt="Video Downloader Pro Screenshot" class="w-full rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Features Section -->
+        <section id="features" class="container mx-auto px-6 py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white">All The Features You Need</h2>
+                <p class="mt-4 text-lg text-slate-400">Packed with powerful and convenient tools.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">MP4 & MP3 Download</h3>
+                    <p class="text-slate-400">Save videos in high-quality MP4 format or extract audio as MP3 files.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Lightweight & Fast</h3>
+                    <p class="text-slate-400">Our app is optimized for speed and performance, without slowing down your system.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Cross-Platform</h3>
+                    <p class="text-slate-400">Get the same great experience on both Windows and Android devices.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Secure & Private</h3>
+                    <p class="text-slate-400">No ads, no trackers. Your privacy is our priority. Just clean, simple software.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Download Section -->
+        <section id="download" class="bg-slate-900 py-20 border-y border-slate-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white mb-12">Download Now</h2>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col items-center">
+                        <h3 class="text-2xl font-bold text-white">Windows</h3>
+                        <p class="text-slate-400 mt-2 mb-4">Compatible with Windows 10 & 11</p>
+                        <a href="#" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                            Download .exe
+                        </a>
+                        <p class="text-xs text-slate-500 mt-3">Version 1.0 | 50 MB</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col items-center">
+                        <h3 class="text-2xl font-bold text-white">Android</h3>
+                        <p class="text-slate-400 mt-2 mb-4">Compatible with Android 8.0+</p>
+                        <a href="#" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                            Download .apk
+                        </a>
+                        <p class="text-xs text-slate-500 mt-3">Version 1.0 | 25 MB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Support / Contact Section -->
+        <section id="support" class="container mx-auto px-6 py-20 text-center">
+             <h2 class="text-4xl font-bold text-white">Need help or want to request a feature?</h2>
+             <p class="mt-4 text-lg text-slate-400 max-w-xl mx-auto">We're here to help. Reach out to our support team with any questions or feedback.</p>
+             <a href="mailto:support@weltrix.com" class="mt-8 inline-block bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                Contact Support
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+            <p>&copy; 2025 Weltrix. All Rights Reserved.</p>
+            <a href="#" class="text-slate-500 hover:text-white mt-2 inline-block">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
