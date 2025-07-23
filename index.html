@@ -27,6 +27,16 @@
             transform: translateY(-4px);
             border-color: #2563eb; /* blue-600 */
         }
+        /* Animation for sections */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -71,28 +81,36 @@
                 <p class="mt-6 text-lg text-slate-400 max-w-xl mx-auto">
                     We build custom software and web solutions to drive growth for your business.
                 </p>
-                <a href="#contact" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                <a href="#contact" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">
                     Get Started
                 </a>
             </div>
         </section>
 
         <!-- Product Banner Section -->
-        <section class="py-12 bg-slate-900 border-b border-slate-800">
+        <section class="py-12 bg-slate-900 border-b border-slate-800 reveal">
             <div class="container mx-auto px-6 text-center">
                 <div class="bg-slate-800 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
                     <p class="text-lg text-slate-300">
                         <span class="font-bold text-white">Featured Product:</span> Discover our powerful and free Video Downloader Pro.
                     </p>
-                    <a href="product-downloader.html" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 whitespace-nowrap">
+                    <a href="product-downloader.html" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 whitespace-nowrap transform hover:scale-105">
                         Learn More &rarr;
                     </a>
                 </div>
             </div>
         </section>
+        
+        <!-- AdSense Placeholder 1 -->
+        <div class="container mx-auto px-6 py-8 text-center">
+            <div class="bg-slate-800 rounded-lg p-8 text-slate-500">
+                <!-- PASTE YOUR GOOGLE ADSENSE CODE FOR A BANNER AD HERE -->
+                AdSense Banner Placeholder
+            </div>
+        </div>
 
         <!-- About Section -->
-        <section id="about" class="container mx-auto px-6 py-20">
+        <section id="about" class="container mx-auto px-6 py-20 reveal">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-white">Who We Are</h2>
                 <p class="mt-4 text-lg text-slate-400 max-w-3xl mx-auto">
@@ -116,7 +134,7 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="bg-slate-900 py-20 border-y border-slate-800">
+        <section id="services" class="bg-slate-900 py-20 border-y border-slate-800 reveal">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center text-white mb-12">Our Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -137,36 +155,47 @@
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="container mx-auto px-6 py-20">
+        <section id="portfolio" class="container mx-auto px-6 py-20 reveal">
             <h2 class="text-4xl font-bold text-center text-white mb-12">Our Portfolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item -->
+                <!-- Portfolio Item 1 -->
                 <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover flex flex-col">
                     <h3 class="text-xl font-bold text-white">Video Downloader Pro</h3>
                     <p class="text-slate-400 mt-2 mb-4 flex-grow">A high-performance utility for downloading video content, featuring a modern UI and advanced features.</p>
-                    <a href="product-downloader.html" class="text-blue-400 hover:text-blue-300 mt-auto font-semibold">View Product &rarr;</a>
+                    <!-- *** UPDATED BUTTON *** -->
+                    <a href="product-downloader.html" class="mt-auto text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-300">
+                        Download Now
+                    </a>
                 </div>
-                <!-- Portfolio Item (Dummy) -->
+                <!-- Portfolio Item 2 (New) -->
                 <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover flex flex-col">
-                    <h3 class="text-xl font-bold text-white">Project Two</h3>
-                    <p class="text-slate-400 mt-2 mb-4 flex-grow">Placeholder for another one of your great IT solutions.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 mt-auto font-semibold">View Project &rarr;</a>
+                    <h3 class="text-xl font-bold text-white">Custom Business Solutions</h3>
+                    <p class="text-slate-400 mt-2 mb-4 flex-grow">We build bespoke software tailored to your specific business needs, from internal tools to enterprise-level platforms.</p>
+                    <a href="#contact" class="text-blue-400 hover:text-blue-300 mt-auto font-semibold">Request a Demo &rarr;</a>
                 </div>
-                <!-- Portfolio Item (Dummy) -->
+                <!-- Portfolio Item 3 (New) -->
                 <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 transition duration-300 card-hover flex flex-col">
-                    <h3 class="text-xl font-bold text-white">Project Three</h3>
-                    <p class="text-slate-400 mt-2 mb-4 flex-grow">Placeholder for a future software product.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 mt-auto font-semibold">View Project &rarr;</a>
+                    <h3 class="text-xl font-bold text-white">Upcoming Innovations</h3>
+                    <p class="text-slate-400 mt-2 mb-4 flex-grow">Our team is always working on the next generation of intelligent software. Stay tuned for new releases.</p>
+                    <a href="#" class="text-slate-500 mt-auto font-semibold cursor-not-allowed">Coming Soon</a>
                 </div>
             </div>
         </section>
 
+        <!-- AdSense Placeholder 2 -->
+        <div class="container mx-auto px-6 py-8 text-center">
+            <div class="bg-slate-800 rounded-lg p-8 text-slate-500">
+                <!-- PASTE YOUR GOOGLE ADSENSE CODE FOR A BOX AD HERE -->
+                AdSense Box Placeholder
+            </div>
+        </div>
+
         <!-- Contact Section -->
-        <section id="contact" class="bg-slate-900 py-20 border-t border-slate-800">
+        <section id="contact" class="bg-slate-900 py-20 border-t border-slate-800 reveal">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center text-white mb-12">Get in Touch</h2>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <form action="https://formspree.io/f/YOUR_EMAIL_HERE" method="POST">
+                    <form action="https://formspree.io/f/meozarwv" method="POST">
                         <div class="mb-4">
                             <label for="name" class="block mb-2 text-sm font-medium">Name</label>
                             <input type="text" id="name" name="name" required class="w-full p-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -179,13 +208,13 @@
                             <label for="message" class="block mb-2 text-sm font-medium">Message</label>
                             <textarea id="message" name="message" rows="4" required class="w-full p-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">Send Message</button>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105">Send Message</button>
                     </form>
                     <div class="flex flex-col justify-center">
                         <h3 class="text-2xl font-bold text-white mb-4">Contact Information</h3>
                         <p class="text-slate-400 mb-2">Have a project idea? Let's talk.</p>
-                        <p class="text-slate-400 mb-2">Email: <a href="mailto:contact@weltrix.com" class="text-blue-400 hover:underline">contact@weltrix.com</a></p>
-                        <p class="text-slate-400">Phone: <a href="tel:+1234567890" class="text-blue-400 hover:underline">(123) 456-7890</a></p>
+                        <p class="text-slate-400 mb-2">Email: <a href="mailto:fineprinthq@gmail.com" class="text-blue-400 hover:underline">fineprinthq@gmail.com</a></p>
+                        <p class="text-slate-400">Phone: <a href="tel:+917574006566" class="text-blue-400 hover:underline">+91 7574006566</a></p>
                     </div>
                 </div>
             </div>
@@ -197,17 +226,31 @@
         <div class="container mx-auto px-6 py-8 text-center text-slate-400">
             <p>&copy; 2025 Weltrix. Smart IT Solutions for a Digital World.</p>
             <div class="mt-4 flex justify-center space-x-6">
-                <a href="#" class="text-slate-500 hover:text-white">Privacy Policy</a>
-                <a href="#" class="text-slate-500 hover:text-white">GitHub</a>
+                <a href="privacy-policy.html" class="text-slate-500 hover:text-white">Privacy Policy</a>
             </div>
         </div>
     </footer>
 
     <script>
+        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
         });
     </script>
 </body>
