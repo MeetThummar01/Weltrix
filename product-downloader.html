@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Downloader Pro by Weltrix</title>
+    <!-- 8. Head Metadata -->
+    <title>Weltrix - YouTube MP4/MP3 Downloader</title>
+    <meta name="description" content="Download YouTube videos in MP3 and MP4 with Weltrix. Lightweight, fast, and ad-free.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +15,13 @@
         html { scroll-behavior: smooth; }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #020617; /* slate-950 */
+            /* 3. Visual Enhancements: Gradient Background */
+            background-color: #111827;
+            background-image: linear-gradient(to bottom right, #111827, #1f2937);
             color: #e2e8f0; /* slate-200 */
         }
         .container {
-            max-width: 500px; /* Reduced container size */
-        }
-        .hero-bg {
-            background-color: #020617;
-            background-image: radial-gradient(#1e293b 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #60A5FA, #3B82F6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            max-width: 1100px; 
         }
     </style>
 </head>
@@ -36,7 +31,7 @@
     <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold text-white hover:text-blue-400 transition">
-                &larr; Back to Weltrix Home
+                Weltrix
             </a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#features" class="text-slate-300 hover:text-blue-400 transition">Features</a>
@@ -48,27 +43,29 @@
 
     <main>
         <!-- 1. Hero Section -->
-        <section id="home" class="hero-bg border-b border-slate-800">
+        <section id="home" class="border-b border-slate-800">
             <div class="container mx-auto px-6 py-24 md:py-32 text-center">
-                <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight">
-                    The Ultimate <span class="gradient-text">Video Downloader</span>
+                <!-- 2. Typography Hierarchy -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">
+                    Weltrix - YouTube Video Downloader
                 </h1>
-                <p class="mt-6 text-lg text-slate-400 max-w-xl mx-auto">
-                    Download videos, audio, and clips from the web in the highest quality. Simple, fast, and free.
+                <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+                    The fastest way to grab MP3 & MP4 from YouTube.
                 </p>
                 <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#download" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                    <!-- 3. Visual Enhancements: Hover Animation -->
+                    <a href="#download" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all duration-200 hover:scale-105">
                         Download Now
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Screenshot/Demo Section -->
+        <!-- 4. Screenshot/Demo Section -->
         <section id="demo" class="py-20">
             <div class="container mx-auto px-6">
                  <div class="bg-slate-800 border border-slate-700 rounded-2xl p-4 shadow-2xl">
-                    <img src="demo.png" alt="Video Downloader Pro Screenshot" class="w-full rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=demo.png+not+found';">
+                    <img src="demo.png" alt="Weltrix YouTube Downloader Screenshot" class="w-full rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=App+Screenshot+Here';">
                 </div>
             </div>
         </section>
@@ -76,24 +73,28 @@
         <!-- 2. Features Section -->
         <section id="features" class="container mx-auto px-6 py-20">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-white">All The Features You Need</h2>
-                <p class="mt-4 text-lg text-slate-400">Packed with powerful and convenient tools.</p>
+                <h2 class="text-4xl font-bold text-white">Everything You Need, Nothing You Don't</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- 1. Mobile Responsiveness -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card -->
                 <div class="bg-slate-800 p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold text-white mb-2">MP4 & MP3 Download</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">📥 MP4 & MP3 Download</h3>
                     <p class="text-slate-400">Save videos in high-quality MP4 format or extract audio as MP3 files.</p>
                 </div>
+                <!-- Feature Card -->
                 <div class="bg-slate-800 p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold text-white mb-2">Lightweight & Fast</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">⚡ Lightweight & Fast</h3>
                     <p class="text-slate-400">Our app is optimized for speed and performance, without slowing down your system.</p>
                 </div>
+                <!-- Feature Card -->
                 <div class="bg-slate-800 p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold text-white mb-2">Cross-Platform</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">💻 Cross-Platform</h3>
                     <p class="text-slate-400">Get the same great experience on both Windows and Android devices.</p>
                 </div>
+                <!-- Feature Card -->
                 <div class="bg-slate-800 p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold text-white mb-2">Secure & Private</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">🔒 Secure & Private</h3>
                     <p class="text-slate-400">No ads, no trackers. Your privacy is our priority. Just clean, simple software.</p>
                 </div>
             </div>
@@ -104,33 +105,57 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-4xl font-bold text-white mb-12">Download Now</h2>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Windows Download Card -->
                     <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col items-center">
                         <h3 class="text-2xl font-bold text-white">Windows</h3>
                         <p class="text-slate-400 mt-2 mb-4">Compatible with Windows 10 & 11</p>
-                        <a href="#" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                        <a href="#" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-200 hover:scale-105">
                             Download .exe
                         </a>
-                        <p class="text-xs text-slate-500 mt-3">Version 1.0 | 50 MB</p>
                     </div>
+                    <!-- Android Download Card -->
                     <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col items-center">
                         <h3 class="text-2xl font-bold text-white">Android</h3>
                         <p class="text-slate-400 mt-2 mb-4">Compatible with Android 8.0+</p>
-                        <a href="#" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                        <a href="#" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-200 hover:scale-105">
                             Download .apk
                         </a>
-                        <p class="text-xs text-slate-500 mt-3">Version 1.0 | 25 MB</p>
                     </div>
+                </div>
+                <!-- 5. Download Info Section -->
+                <div class="mt-8">
+                    <small class="text-gray-400">Weltrix v1.0.0 | Windows 18MB • Android 12MB</small>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Support / Contact Section -->
-        <section id="support" class="container mx-auto px-6 py-20 text-center">
-             <h2 class="text-4xl font-bold text-white">Need help or want to request a feature?</h2>
-             <p class="mt-4 text-lg text-slate-400 max-w-xl mx-auto">We're here to help. Reach out to our support team with any questions or feedback.</p>
-             <a href="mailto:support@weltrix.com" class="mt-8 inline-block bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
-                Contact Support
-            </a>
+        <!-- 7. Trust Elements -->
+        <section id="trust" class="container mx-auto px-6 py-20">
+             <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                <div class="flex items-center justify-center gap-x-3">
+                    <span class="text-green-400">✔</span>
+                    <p>No Ads</p>
+                </div>
+                <div class="flex items-center justify-center gap-x-3">
+                    <span class="text-green-400">✔</span>
+                    <p>100% Free</p>
+                </div>
+                <div class="flex items-center justify-center gap-x-3">
+                    <span class="text-green-400">✔</span>
+                    <p>VirusTotal Scanned</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Support / Contact Section -->
+        <section id="support" class="bg-slate-900 py-20 border-t border-slate-800 text-center">
+             <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white">Need help or want to report a bug?</h2>
+                <p class="mt-4 text-lg text-slate-400 max-w-xl mx-auto">We're here to help. Reach out to our support team with any questions or feedback.</p>
+                <a href="mailto:contact.weltrix@gmail.com" class="mt-8 inline-block bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-200 hover:scale-105">
+                   📩 contact.weltrix@gmail.com
+                </a>
+             </div>
         </section>
     </main>
 
@@ -138,7 +163,10 @@
     <footer class="bg-slate-950 border-t border-slate-800">
         <div class="container mx-auto px-6 py-8 text-center text-slate-400">
             <p>&copy; 2025 Weltrix. All Rights Reserved.</p>
-            <a href="#" class="text-slate-500 hover:text-white mt-2 inline-block">Privacy Policy</a>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-slate-500 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-slate-500 hover:text-white">GitHub</a>
+            </div>
         </div>
     </footer>
 
